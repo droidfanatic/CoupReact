@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-right: 4px solid black;
+  }
+  
+  .main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 4px solid black;
+  }
+  
+  .bottom {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Remove the right border from the last sidebar */
+  .sidebar:last-child {
+    border-right: none;
+    border-left: 4px solid black;
+  }
+  

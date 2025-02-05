@@ -1,0 +1,71 @@
+.lobby-container {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Player List (Left Side) */
+.players-list {
+    width: 180px;
+    height: 80%;
+    border: 2px solid black;
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+/* Name Input & Buttons (Top Right) */
+.input-section {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-section input {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.input-section button {
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* Rules Button (Bottom Left) */
+.rules-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* Start Game Button (Bottom Right) */
+.start-game-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

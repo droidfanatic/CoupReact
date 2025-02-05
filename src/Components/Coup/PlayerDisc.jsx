@@ -22,6 +22,7 @@ function PlayerDisc({playerList, playerId, isUserTurn = false, isRealPlayer = fa
             {isPlayer ?
             <div>
                 <h3>{name}</h3>
+                <h5>{isTurn}</h5>
                 {isTurn && <img src=''/>}
             </div> :
             <div>
